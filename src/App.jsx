@@ -1,8 +1,18 @@
-import './styles/styles.css';
-function App() {
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import Students from "./components/Students"
+import Products from "./components/Products"
+import "./styles/styles.css"
+import Footer from "./components/Footer"
+
+const App = () => {
   return (
-    <div className="App">
-      <h2 className="text-center bg-slate-400 text-white p-3">Testing Tailwind App</h2>
+    <div className="App bg-slate-900 h-full text-white">
+      <Navbar />
+      <Hero />
+      <Students />
+      <Products />
+      <Footer />
     </div>
   )
 }
